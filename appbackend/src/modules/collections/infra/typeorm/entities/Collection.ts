@@ -14,7 +14,7 @@ class Collection {
   description: string;
 
   @Column('numeric')
-  total_volume: number;
+  total_volumes: number;
 
   @CreateDateColumn()
   created_at: Date;
