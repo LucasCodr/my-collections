@@ -3,6 +3,6 @@ import Collection from '../infra/typeorm/entities/Collection';
 
 export default interface ICollectionsRepository {
   findAll(): Promise<Collection[]>;
-  findById(id: string): Promise<Collection | undefined>;
+  findByName(name: string): Promise<Collection | undefined>;
   create(data: ICreateCollectionDTO): Promise<Collection>;
 }

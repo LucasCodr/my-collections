@@ -22,9 +22,9 @@ class CollectionsRepository implements ICollectionsRepository {
     return this.ormRepository.find();
   }
 
-  async findById(id: string): Promise<Collection | undefined> {
+  async findByName(name: string): Promise<Collection | undefined> {
     const collection = this.ormRepository.findOne({
-      where: id,
+      where: name,
     })
 
     return collection;
